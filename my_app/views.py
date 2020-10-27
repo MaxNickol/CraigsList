@@ -48,7 +48,7 @@ def new_search(request):
 
         BASE_IMG_URL = 'https://images.craigslist.org/{}_300x300.jpg'
 
-        # Find the image if it is exist
+        # Find the image if it exists
         if post.find(class_='result-image').get('data-ids'):
             # Get the data-ids attribute in <a> tag
             url_id = post.find(class_='result-image').get('data-ids')
